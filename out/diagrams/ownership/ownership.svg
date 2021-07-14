@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="593px" preserveAspectRatio="none" style="width:512px;height:593px;background:#0B58A8;" version="1.1" viewBox="0 0 512 593" width="512px" zoomAndPan="magnify"><defs/><g><rect fill="#0B58A8" height="36.7373" style="stroke:#0B58A8;stroke-width:0.0;" width="209" x="147" y="10"/><text fill="#FFFFFF" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="199" x="152" y="37.1182">Rust Ownership</text><!--MD5=[e94fd23e6c9f862774a3b81f7fa14da2]
+cluster Stack--><rect fill="#0B58A8" height="425" style="stroke:none;stroke-width:1.0;" width="186" x="304" y="108.7373"/><path d="M289,108.7373 L304,108.7373 L304,533.7373 L490,533.7373 L490,108.7373 L505,108.7373 " fill="none" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="42" x="376" y="135.8125">Stack</text><!--MD5=[80028cddcfd378d930f0ae156c42ebbe]
+class Stack.LOCAL_VARS_C--><rect fill="#0B58A8" height="27.0146" id="Stack.LOCAL_VARS_C" style="stroke:#FFFFFF;stroke-width:1.5;" width="121" x="336.5" y="153.2373"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="115" x="339.5" y="172.3125">LOCAL_VARS_C</text><!--MD5=[a1ad7337bdeb8dacd446ac7c8323d6bf]
+class Stack.RETURN_ADDR_C--><rect fill="#0B58A8" height="27.0146" id="Stack.RETURN_ADDR_C" style="stroke:#FFFFFF;stroke-width:1.5;" width="134" x="330" y="215.2373"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="128" x="333" y="234.3125">RETURN_ADDR_C</text><!--MD5=[127c97a89695ba577b65bd6033d2c014]
+class Stack.FUNCTION_PARAMS_C--><rect fill="#0B58A8" height="27.0146" id="Stack.FUNCTION_PARAMS_C" style="stroke:#FFFFFF;stroke-width:1.5;" width="168" x="313" y="277.2373"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="162" x="316" y="296.3125">FUNCTION_PARAMS_C</text><!--MD5=[77a2aca179d25409d990824e8db51db2]
+class Stack.LOCAL_VARS_B--><rect fill="#0B58A8" height="27.0146" id="Stack.LOCAL_VARS_B" style="stroke:#FFFFFF;stroke-width:1.5;" width="121" x="336.5" y="339.2373"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="115" x="339.5" y="358.3125">LOCAL_VARS_B</text><!--MD5=[f55bfca71a137935c81506a7264bc264]
+class Stack.RETURN_ADDR_B--><rect fill="#0B58A8" height="27.0146" id="Stack.RETURN_ADDR_B" style="stroke:#FFFFFF;stroke-width:1.5;" width="134" x="330" y="401.2373"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="128" x="333" y="420.3125">RETURN_ADDR_B</text><!--MD5=[a69d7fd214f48d5c7e286459746557aa]
+class Stack.FUNCTION_PARAMS_B--><rect fill="#0B58A8" height="27.0146" id="Stack.FUNCTION_PARAMS_B" style="stroke:#FFFFFF;stroke-width:1.5;" width="168" x="313" y="463.2373"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="162" x="316" y="482.3125">FUNCTION_PARAMS_B</text><path d="M11,121.2373 L11,176.6357 L192,176.6357 L192,131.2373 L182,121.2373 L11,121.2373 " fill="#0B58A8" style="stroke:#FFFFFF;stroke-width:1.0;"/><path d="M182,121.2373 L182,131.2373 L192,131.2373 L182,121.2373 " fill="#0B58A8" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="160" x="17" y="138.3042">fn C(x:f32, y:f32) {</text><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="112" x="17" y="153.437">let v = x + y;</text><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="8" x="17" y="168.5698">}</text><path d="M11,353.7373 L11,439.4014 L192,439.4014 L192,363.7373 L182,353.7373 L11,353.7373 " fill="#0B58A8" style="stroke:#FFFFFF;stroke-width:1.0;"/><path d="M182,353.7373 L182,363.7373 L192,363.7373 L182,353.7373 " fill="#0B58A8" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="160" x="17" y="370.8042">fn B(a:i32, b:u64) {</text><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="112" x="17" y="385.937">let x = 10.44;</text><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="112" x="17" y="401.0698">let y = 13.13;</text><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="64" x="17" y="416.2026">C(x, y);</text><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="8" x="17" y="431.3354">}</text><path d="M367.5,58.7373 L367.5,84.5366 L426.5,84.5366 L426.5,68.7373 L416.5,58.7373 L367.5,58.7373 " fill="#0B58A8" style="stroke:#FFFFFF;stroke-width:1.0;"/><path d="M416.5,58.7373 L416.5,68.7373 L426.5,68.7373 L416.5,58.7373 " fill="#0B58A8" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="38" x="373.5" y="76.8071">0x5FF</text><path d="M367,560.7373 L367,586.5366 L427,586.5366 L427,570.7373 L417,560.7373 L367,560.7373 " fill="#0B58A8" style="stroke:#FFFFFF;stroke-width:1.0;"/><path d="M417,560.7373 L417,570.7373 L427,570.7373 L417,560.7373 " fill="#0B58A8" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="39" x="373" y="578.8071">0x0...</text><!--MD5=[ccda35614952638dc880e53dbde0da47]
+link StackBottom to Stack--><!--MD5=[0fa9f8b07647131d3729b4a40bfcf715]
+link Stack to StackTop--><!--MD5=[8bee04b200f63c62f6ca2f33efc7f884]
+reverse link CCODE to Stack.LOCAL_VARS_C--><path codeLine="40" d="M197.49,122.9873 C215.88,120.6473 235.02,120.0373 253,122.7373 C291.4,128.5073 333.72,142.5473 362.28,153.2273 " fill="none" id="CCODE-backto-Stack.LOCAL_VARS_C" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="192.32,123.6873,201.7832,126.4164,197.2728,123.0022,200.687,118.4918,192.32,123.6873" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[52441508983638297aea92eac9e9c6b3]
+reverse link CCODE to Stack.RETURN_ADDR_C--><path codeLine="41" d="M197.07,176.5173 C221.74,183.5973 248.33,191.0873 273,197.7373 C295.11,203.6973 319.56,209.9373 340.79,215.2373 " fill="none" id="CCODE-backto-Stack.RETURN_ADDR_C" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="192.16,175.1073,199.6974,181.4466,196.9638,176.4941,201.9163,173.7605,192.16,175.1073" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[963b3f7b3fc86bd0799c3b0c5fbc22a7]
+reverse link CCODE to Stack.FUNCTION_PARAMS_C--><path codeLine="42" d="M141.81,179.7473 C175.05,204.5973 224.83,238.6873 273,259.7373 C289.45,266.9273 307.89,272.6773 325.39,277.1773 " fill="none" id="CCODE-backto-Stack.FUNCTION_PARAMS_C" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="137.43,176.4573,142.2152,185.0655,141.4248,179.4642,147.0262,178.6738,137.43,176.4573" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[a302bbccf1524d89982520b03c3878a4]
+link BCODE to Stack.FUNCTION_PARAMS_C--><path codeLine="44" d="M192.08,353.9773 C217.85,342.5873 246.24,330.9273 273,321.7373 C286.08,317.2473 300.15,313.0873 313.94,309.3773 " fill="none" id="BCODE-to-Stack.FUNCTION_PARAMS_C" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="312.67,302.4773,333.78,304.2673,316.16,316.0373,312.67,302.4773" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[aba4562f344f4927606ee7a375bc86e4]
+reverse link BCODE to Stack.LOCAL_VARS_B--><path codeLine="46" d="M197.11,382.5573 C242.76,375.7073 296.14,367.7073 336.1,361.7173 " fill="none" id="BCODE-backto-Stack.LOCAL_VARS_B" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="192.15,383.2973,201.6445,385.9153,197.0945,382.5542,200.4556,378.0041,192.15,383.2973" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[35070fdfb7b24ab52415ace184ecd1bd]
+reverse link BCODE to Stack.RETURN_ADDR_B--><path codeLine="47" d="M197.39,402.5573 C240.58,405.2073 290.65,408.2773 329.72,410.6673 " fill="none" id="BCODE-backto-Stack.RETURN_ADDR_B" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="192.15,402.2373,200.8935,406.7707,197.141,402.5376,201.374,398.7851,192.15,402.2373" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[0cad790dfd083cd38d905eeae337ef84]
+reverse link BCODE to Stack.FUNCTION_PARAMS_B--><path codeLine="48" d="M197.07,424.5173 C221.74,431.5973 248.33,439.0873 273,445.7373 C295.11,451.6973 319.56,457.9373 340.79,463.2373 " fill="none" id="BCODE-backto-Stack.FUNCTION_PARAMS_B" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="192.16,423.1073,199.6974,429.4466,196.9638,424.4941,201.9163,421.7605,192.16,423.1073" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[4b9d998c9ded79a7f540f99bb38d03aa]
+@startuml
+!theme amiga
+hide circle
+hide empty members
+skinparam groupInheritance 3
+left to right direction
+allow_mixing
+
+title
+Rust Ownership
+end title
+
+note as CCODE
+<code>
+fn C(x:f32, y:f32) {
+let v = x + y;
+}
+</code>
+end note
+
+note as BCODE
+<code>
+fn B(a:i32, b:u64) {
+let x = 10.44;
+let y = 13.13;
+C(x, y);
+}
+</code>
+end note
+
+
+note "0x5FF" as StackTop
+note "0x0..." as StackBottom
+stack Stack {
+
+}
+
+StackBottom -[hidden]d Stack
+StackTop -[hidden]u Stack
+
+CCODE <- - - Stack.LOCAL_VARS_C
+CCODE <- - - Stack.RETURN_ADDR_C
+CCODE <- - - Stack.FUNCTION_PARAMS_C
+
+BCODE ...|> Stack.FUNCTION_PARAMS_C
+
+BCODE <- - - Stack.LOCAL_VARS_B
+BCODE <- - - Stack.RETURN_ADDR_B
+BCODE <- - - Stack.FUNCTION_PARAMS_B
+@enduml
+
+@startuml
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor #0B58A8
+    FontColor #FFFFFF
+    FontName Verdana
+    HyperLinkColor #FDA325
+    LineColor #FFFFFF
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor #FFFFFF
+    FontColor #0B58A8
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  referenceHeader {
+    BackgroundColor #FFFFFF
+    FontColor #0B58A8
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor #FFFFFF
+    FontColor #0B58A8
+    FontStyle bold
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor #FFFFFF
+skinparam BackgroundColor #0B58A8
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor #FFFFFF
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor #0B58A8
+  BarColor #FFFFFF
+  BorderColor #FFFFFF
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor #FFFFFF
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor #0B58A8
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor #0B58A8
+  BorderColor #FFFFFF
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam Header {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color #FDA325
+}
+skinparam IconPackage {
+  Color #FFFFFF
+  BackgroundColor #0B58A8
+}
+skinparam IconPrivate {
+  Color #FFFFFF
+  BackgroundColor #0B58A8
+}
+skinparam IconProtected {
+  Color #FFFFFF
+  BackgroundColor #0B58A8
+}
+skinparam IconPublic {
+  Color #FFFFFF
+  BackgroundColor #0B58A8
+}
+skinparam Note {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam Package {
+  BorderColor #FFFFFF
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor #0B58A8
+  BorderColor #FFFFFF
+}
+skinparam StereotypeA {
+  BackgroundColor #FFFFFF
+  BorderColor #FFFFFF
+}
+skinparam StereotypeC {
+  BackgroundColor #FFFFFF
+  BorderColor #FFFFFF
+}
+skinparam StereotypeE {
+  BackgroundColor #FFFFFF
+  BorderColor #FFFFFF
+}
+skinparam StereotypeI {
+  BackgroundColor #FFFFFF
+  BorderColor #FFFFFF
+}
+skinparam StereotypeN {
+  BackgroundColor #FFFFFF
+  BorderColor #FFFFFF
+}
+skinparam UseCaseStereoType {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+hide circle
+hide empty members
+skinparam groupInheritance 3
+left to right direction
+allow_mixing
+
+title
+Rust Ownership
+end title
+
+note as CCODE
+<code>
+fn C(x:f32, y:f32) {
+let v = x + y;
+}
+</code>
+end note
+
+note as BCODE
+<code>
+fn B(a:i32, b:u64) {
+let x = 10.44;
+let y = 13.13;
+C(x, y);
+}
+</code>
+end note
+
+
+note "0x5FF" as StackTop
+note "0x0..." as StackBottom
+stack Stack {
+
+}
+
+StackBottom -[hidden]d Stack
+StackTop -[hidden]u Stack
+
+CCODE <- - - Stack.LOCAL_VARS_C
+CCODE <- - - Stack.RETURN_ADDR_C
+CCODE <- - - Stack.FUNCTION_PARAMS_C
+
+BCODE ...|> Stack.FUNCTION_PARAMS_C
+
+BCODE <- - - Stack.LOCAL_VARS_B
+BCODE <- - - Stack.RETURN_ADDR_B
+BCODE <- - - Stack.FUNCTION_PARAMS_B
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>
