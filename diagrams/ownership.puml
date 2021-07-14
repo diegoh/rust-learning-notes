@@ -1,0 +1,50 @@
+!theme amiga
+hide circle
+hide empty members
+skinparam groupInheritance 3
+left to right direction
+allow_mixing
+
+title
+Rust Ownership
+end title
+
+note as CCODE
+<code>
+fn C(x:f32, y:f32) {
+let v = x + y;
+}
+</code>
+end note
+
+note as BCODE
+<code>
+fn B(a:i32, b:u64) {
+let x = 10.44;
+let y = 13.13;
+C(x, y);
+}
+</code>
+end note
+
+
+note "0x5FF" as StackTop
+note "0x0..." as StackBottom
+stack Stack {
+
+}
+
+StackBottom -[hidden]d Stack
+StackTop -[hidden]u Stack
+
+CCODE <--- Stack.LOCAL_VARS_C
+CCODE <--- Stack.RETURN_ADDR_C
+CCODE <--- Stack.FUNCTION_PARAMS_C
+
+BCODE ...|> Stack.FUNCTION_PARAMS_C
+
+BCODE <--- Stack.LOCAL_VARS_B
+BCODE <--- Stack.RETURN_ADDR_B
+BCODE <--- Stack.FUNCTION_PARAMS_B
+
+
