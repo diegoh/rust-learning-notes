@@ -49,4 +49,7 @@ fn main() {
         v2.push(i.to_string());
     }
     println!("v len: {}, capacity: {}", v2.len(), v2.capacity()); // double capacity so that it can keep roughly constant time
+
+    let v3 = v2;
+    println!("v3 {:?}", v3);
 }

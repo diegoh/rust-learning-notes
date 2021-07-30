@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="238px" preserveAspectRatio="none" style="width:834px;height:238px;background:#0B58A8;" version="1.1" viewBox="0 0 834 238" width="834px" zoomAndPan="magnify"><defs/><g><rect fill="#0B58A8" height="36.7373" style="stroke:#0B58A8;stroke-width:0.0;" width="177" x="324" y="10"/><text fill="#FFFFFF" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="167" x="329" y="37.1182">Stack &amp; Heap</text><rect fill="#0B58A8" height="142" style="stroke:#FFFFFF;stroke-width:1.0;" width="499" x="329" y="59.7373"/><!--MD5=[1a47157467d69c83c0a10e9152875283]
+class Stack--><rect codeLine="22" fill="#0B58A8" height="102.0586" id="Stack" style="stroke:#FFFFFF;stroke-width:1.5;" width="175" x="353" y="79.7373"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="169" x="356" y="98.8125">Stack (Stores pointer v)</text><line style="stroke:#FFFFFF;stroke-width:1.5;" x1="354" x2="527" y1="106.752" y2="106.752"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="31" x="359" y="124.8271">data</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="354" x2="527" y1="131.7666" y2="131.7666"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="45" x="359" y="149.8418">length</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="354" x2="527" y1="156.7813" y2="156.7813"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="57" x="359" y="174.8564">capacity</text><!--MD5=[e9f17e4922be6079066fa450c8bff6eb]
+class Heap--><rect codeLine="29" fill="#0B58A8" height="86.0586" id="Heap" style="stroke:#FFFFFF;stroke-width:1.5;" width="216" x="596" y="87.7373"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="210" x="599" y="106.8125">Heap (Stores actual contents)</text><line style="stroke:#FFFFFF;stroke-width:1.5;" x1="597" x2="811" y1="114.752" y2="114.752"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="9" x="602" y="132.8271">1</text><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="9" x="602" y="149.8418">2</text><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="9" x="602" y="166.8564">3</text><path d="M11,176.2373 L11,231.6357 L224,231.6357 L224,186.2373 L214,176.2373 L11,176.2373 " fill="#0B58A8" style="stroke:#FFFFFF;stroke-width:1.0;"/><path d="M214,176.2373 L214,186.2373 L224,186.2373 L214,176.2373 " fill="#0B58A8" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="88" x="17" y="193.3042">fn main() {</text><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="176" x="33" y="208.437">let v = vec![1, 2, 3];</text><text fill="#FFFFFF" font-family="monospace" font-size="13" lengthAdjust="spacing" textLength="8" x="17" y="223.5698">}</text><!--MD5=[fea150d5896ecedad019dcc673bbae63]
+reverse link CCODE to Stack--><path codeLine="36" d="M229.11,178.5873 C266.83,170.0073 308.64,160.4973 344.98,152.2373 " fill="none" id="CCODE-backto-Stack" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="224.05,179.7373,233.7153,181.6298,228.9241,178.6224,231.9315,173.8312,224.05,179.7373" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[6f41fa3d38051009fd84d5c50a234904]
+reverse link CCODE to Heap--><path codeLine="37" d="M229.4,215.4973 C314.27,221.6173 433.71,223.9773 536,202.7373 C564.75,196.7673 594.65,185.6373 621.07,173.8773 " fill="none" id="CCODE-backto-Heap" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="224.37,215.1273,233.048,219.7849,229.3562,215.4988,233.6423,211.807,224.37,215.1273" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[0f35c390659112ce4849788211d1a18f]
+link Stack to Heap--><path codeLine="38" d="M529.5,118.7373 C549.26,118.7373 570.26,119.5173 590.57,120.6873 " fill="none" id="Stack-to-Heap" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="595.72,120.9973,586.9629,116.4904,590.7281,120.7121,586.5065,124.4773,595.72,120.9973" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[9761559a3d8d32c4e00561efe7a18d75]
+@startuml
+!theme amiga
+hide circle
+hide empty members
+skinparam groupInheritance 3
+left to right direction
+allow_mixing
+
+
+title
+Stack & Heap
+end title
+
+note as CCODE
+<code>
+fn main() {
+  let v = vec![1, 2, 3];
+}
+</code>
+end note
+
+rectangle {  
+  entity Stack as "Stack (Stores pointer v)" {
+    data
+    - -
+    length
+    - -
+    capacity
+  }
+  entity Heap as "Heap (Stores actual contents)" {
+    1
+    2
+    3
+  }
+}
+
+CCODE <- - - Stack
+CCODE <- - - Heap
+Stack::data - -> Heap
+@enduml
+
+@startuml
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor #0B58A8
+    FontColor #FFFFFF
+    FontName Verdana
+    HyperLinkColor #FDA325
+    LineColor #FFFFFF
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor #FFFFFF
+    FontColor #0B58A8
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  referenceHeader {
+    BackgroundColor #FFFFFF
+    FontColor #0B58A8
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor #FFFFFF
+    FontColor #0B58A8
+    FontStyle bold
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor #FFFFFF
+skinparam BackgroundColor #0B58A8
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor #FFFFFF
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor #0B58A8
+  BarColor #FFFFFF
+  BorderColor #FFFFFF
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor #FFFFFF
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor #0B58A8
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor #0B58A8
+  BorderColor #FFFFFF
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam Header {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color #FDA325
+}
+skinparam IconPackage {
+  Color #FFFFFF
+  BackgroundColor #0B58A8
+}
+skinparam IconPrivate {
+  Color #FFFFFF
+  BackgroundColor #0B58A8
+}
+skinparam IconProtected {
+  Color #FFFFFF
+  BackgroundColor #0B58A8
+}
+skinparam IconPublic {
+  Color #FFFFFF
+  BackgroundColor #0B58A8
+}
+skinparam Note {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam Package {
+  BorderColor #FFFFFF
+  FontColor #FFFFFF
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor #0B58A8
+  BorderColor #FFFFFF
+}
+skinparam StereotypeA {
+  BackgroundColor #FFFFFF
+  BorderColor #FFFFFF
+}
+skinparam StereotypeC {
+  BackgroundColor #FFFFFF
+  BorderColor #FFFFFF
+}
+skinparam StereotypeE {
+  BackgroundColor #FFFFFF
+  BorderColor #FFFFFF
+}
+skinparam StereotypeI {
+  BackgroundColor #FFFFFF
+  BorderColor #FFFFFF
+}
+skinparam StereotypeN {
+  BackgroundColor #FFFFFF
+  BorderColor #FFFFFF
+}
+skinparam UseCaseStereoType {
+  FontColor #FFFFFF
+  FontName Verdana
+}
+hide circle
+hide empty members
+skinparam groupInheritance 3
+left to right direction
+allow_mixing
+
+
+title
+Stack & Heap
+end title
+
+note as CCODE
+<code>
+fn main() {
+  let v = vec![1, 2, 3];
+}
+</code>
+end note
+
+rectangle {  
+  entity Stack as "Stack (Stores pointer v)" {
+    data
+    - -
+    length
+    - -
+    capacity
+  }
+  entity Heap as "Heap (Stores actual contents)" {
+    1
+    2
+    3
+  }
+}
+
+CCODE <- - - Stack
+CCODE <- - - Heap
+Stack::data - -> Heap
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

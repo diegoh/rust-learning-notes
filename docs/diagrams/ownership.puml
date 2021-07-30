@@ -1,0 +1,38 @@
+!theme amiga
+hide circle
+hide empty members
+skinparam groupInheritance 3
+left to right direction
+allow_mixing
+
+
+title
+Stack & Heap
+end title
+
+note as CCODE
+<code>
+fn main() {
+  let v = vec![1, 2, 3];
+}
+</code>
+end note
+
+rectangle {  
+  entity Stack as "Stack (Stores pointer v)" {
+    data
+    --
+    length
+    --
+    capacity
+  }
+  entity Heap as "Heap (Stores actual contents)" {
+    1
+    2
+    3
+  }
+}
+
+CCODE <--- Stack
+CCODE <--- Heap
+Stack::data --> Heap

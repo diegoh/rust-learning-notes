@@ -37,4 +37,4 @@ There are two areas of memory: The stack and the heap. The developer uses types 
 
 Stack memory is short lived and smaller. The size of a variable needs to be known before.
 
-![Diagram](/out/diagrams/ownership/ownership.svg "Ownership")
+![Diagram](/docs/out/diagrams/ownership/ownership.svg "Ownership")
